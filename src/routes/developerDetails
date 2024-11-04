@@ -1,0 +1,17 @@
+const express = require('express');
+const { getGamesByDeveloper } = require('../database/queries'); // Assumes a query function for this purpose
+const router = express.Router();
+
+// Route to display games by a specific developer
+router.get('/:id', async (req, res) => {
+    const developerId = req.params.id;
+    try {
+        const games = await getGamesByDeveloper(developerId);
+        res.render('developerDetails', { games }); // Render a page with games by this developer
+    } catch (err) {
+        console.error('Error retrieving games by developer:', err.stack);
+        res.status(500).send('Error retrieving games');
+    }
+});
+
+module.exports = router;

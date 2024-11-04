@@ -1,0 +1,6 @@
+<div class="game-item">
+    <a href="/games/<%= game.id %>">
+        <img src="<%= game.image_url || '/path/to/default-image.jpg' %>" alt="<%= game.title %>">
+        <div class="game-title"><%= game.title %></div>
+    </a>
+</div>

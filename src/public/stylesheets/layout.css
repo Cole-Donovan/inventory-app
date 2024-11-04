@@ -1,0 +1,19 @@
+:root {
+    --first-color: #e4f1fe;  /* Lightest color */
+    --second-color: #8dc6ff; /* Lighter blue */
+    --third-color: #22313f;   /* Darker blue */
+    --fourth-color: #34495e;  /* Darkest blue */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--first-color); /* Using the first color */
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}

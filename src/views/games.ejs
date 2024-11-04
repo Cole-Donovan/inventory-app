@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Games List</title>
+    <link rel="stylesheet" href="/stylesheets/games.css">
 </head>
 <body>
     <h1>Games List</h1>
-    <ul>
+    <div class="games-grid">
         <% games.forEach(game => { %>
-            <li>
-                <a href="/games/<%= game.id %>"><%= game.title %></a>
-            </li>
+            <%- include('partials/game-grid-item', { game: game }) %>
         <% }) %>
-    </ul>
-    <p><a class="back-button" href="/">Back</a></p>
+    </div>
+    <!-- <p><a class="back-button" href="/">Back</a></p> -->
 </body>
 </html>

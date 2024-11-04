@@ -1,0 +1,38 @@
+/* Styles for a single game item */
+.game-item {
+    width: 200px; /* Fixed width for the game item */
+    margin: 15px auto; /* Center the item horizontally with margin */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures children don't overflow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation for hover effects */
+}
+
+.game-item:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.game-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Use the parent color */
+}
+
+.game-item img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.game-title {
+    padding: 10px; /* Space around the title */
+    text-align: center; /* Center the title text */
+    font-size: 1.1em; /* Slightly larger font for the title */
+    background-color: #f8f8f8; /* Light background for title area */
+    border-top: 1px solid #ccc; /* Separator line */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.game-title:hover {
+    background-color: #eaeaea; /* Darken background on hover */
+}

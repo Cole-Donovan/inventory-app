@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games by Developer</title>
+</head>
+<body>
+    <h1>Games by this Developer</h1>
+    <ul>
+        <% games.forEach(game => { %>
+            <li><%= game.title %></li>
+        <% }) %>
+    </ul>
+    <p><a href="/developers">Back to Developers</a></p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games in Genre</title>
+    <link rel="stylesheet" href="/stylesheets/games.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <%- include("partials/header") %> <!-- Include the header partial -->
+        </nav>
+    </header>
+    <main>
+        <h1>Games in this Genre</h1>
+        <div class="games-grid"> <!-- Container for the game grid -->
+            <% games.forEach(game => { %>
+                <%- include("partials/game-grid-item", { game: game }) %> <!-- Include the game grid item partial and pass the game data -->
+            <% }) %>
+        </div>
+        <p><a href="/genres">Back to Genres</a></p>
+    </main>
+</body>
+</html>

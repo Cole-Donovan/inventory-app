@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genres List</title>
+</head>
+<body>
+    <h1>Genres List</h1>
+    <% genres.forEach(genre => { %>
+        <li>
+            <a href="/genres/<%= genre.id %>"><%= genre.name %></a>
+        </li>
+    <% }) %>
+    <p><a class="back-button" href="/">Back</a></p>
+</body>
+</html>

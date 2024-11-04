@@ -37,7 +37,6 @@ const manageDatabase = async (action) => {
                 break;
             case 'clearAll':
                 await clearAllTables();
-                console.log('All tables have been cleared successfully.');
                 break;
 
             // Populate tables

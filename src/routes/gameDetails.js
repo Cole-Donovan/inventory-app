@@ -7,7 +7,10 @@ router.get('/:id', async (req, res) => {
     try {
         const game = await getGameById(gameId);
         if (game) {
-            res.render('gameDetails', { game }); // Render the EJS template with game data
+            res.render('layout', { 
+                body: 'gameDetails',
+                game 
+            });
         } else {
             res.status(404).send('Game not found');
         }

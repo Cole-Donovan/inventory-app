@@ -1,0 +1,26 @@
+/* Grid container for games */
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-item {
+    width: 200px;
+    margin: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
